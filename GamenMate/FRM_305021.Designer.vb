@@ -1,0 +1,108 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class FRM_305021
+    Inherits GamenMate.FRM_000001
+
+    'Form は、コンポーネント一覧に後処理を実行するために dispose をオーバーライドします。
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        If disposing AndAlso components IsNot Nothing Then
+            components.Dispose()
+        End If
+        MyBase.Dispose(disposing)
+    End Sub
+
+    'Windows フォーム デザイナで必要です。
+    Private components As System.ComponentModel.IContainer
+
+    'メモ: 以下のプロシージャは Windows フォーム デザイナで必要です。
+    'Windows フォーム デザイナを使用して変更できます。  
+    'コード エディタを使って変更しないでください。
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.Label12 = New System.Windows.Forms.Label
+        Me.cmdCancel = New System.Windows.Forms.Button
+        Me.cmdZikkou = New System.Windows.Forms.Button
+        Me.cboXSYUKKA_KAHI = New MateCommon.cmpMComboBox
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.SuspendLayout()
+        '
+        'Label12
+        '
+        Me.Label12.Font = New System.Drawing.Font("ＭＳ ゴシック", 15.0!, System.Drawing.FontStyle.Bold)
+        Me.Label12.ForeColor = System.Drawing.Color.Black
+        Me.Label12.Location = New System.Drawing.Point(56, 8)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(392, 46)
+        Me.Label12.TabIndex = 241
+        Me.Label12.Text = "更新する出荷可否を選択し、           【更新登録】ボタンを押下して下さい。"
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'cmdCancel
+        '
+        Me.cmdCancel.BackColor = System.Drawing.Color.DarkGray
+        Me.cmdCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.cmdCancel.Font = New System.Drawing.Font("ＭＳ ゴシック", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.cmdCancel.ForeColor = System.Drawing.Color.Black
+        Me.cmdCancel.Location = New System.Drawing.Point(304, 146)
+        Me.cmdCancel.Name = "cmdCancel"
+        Me.cmdCancel.Size = New System.Drawing.Size(216, 40)
+        Me.cmdCancel.TabIndex = 240
+        Me.cmdCancel.Text = "キャンセル"
+        Me.cmdCancel.UseVisualStyleBackColor = False
+        '
+        'cmdZikkou
+        '
+        Me.cmdZikkou.BackColor = System.Drawing.Color.DarkGray
+        Me.cmdZikkou.Font = New System.Drawing.Font("ＭＳ ゴシック", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.cmdZikkou.ForeColor = System.Drawing.Color.Black
+        Me.cmdZikkou.Location = New System.Drawing.Point(16, 146)
+        Me.cmdZikkou.Name = "cmdZikkou"
+        Me.cmdZikkou.Size = New System.Drawing.Size(216, 40)
+        Me.cmdZikkou.TabIndex = 239
+        Me.cmdZikkou.Text = "登録"
+        Me.cmdZikkou.UseVisualStyleBackColor = False
+        '
+        'cboXSYUKKA_KAHI
+        '
+        Me.cboXSYUKKA_KAHI.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboXSYUKKA_KAHI.Font = New System.Drawing.Font("ＭＳ ゴシック", 15.0!, System.Drawing.FontStyle.Bold)
+        Me.cboXSYUKKA_KAHI.FormattingEnabled = True
+        Me.cboXSYUKKA_KAHI.IntegralHeight = False
+        Me.cboXSYUKKA_KAHI.Location = New System.Drawing.Point(208, 88)
+        Me.cboXSYUKKA_KAHI.Name = "cboXSYUKKA_KAHI"
+        Me.cboXSYUKKA_KAHI.Size = New System.Drawing.Size(192, 28)
+        Me.cboXSYUKKA_KAHI.TabIndex = 243
+        '
+        'Label1
+        '
+        Me.Label1.Font = New System.Drawing.Font("ＭＳ ゴシック", 15.0!, System.Drawing.FontStyle.Bold)
+        Me.Label1.ForeColor = System.Drawing.Color.Black
+        Me.Label1.Location = New System.Drawing.Point(96, 85)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(112, 32)
+        Me.Label1.TabIndex = 244
+        Me.Label1.Text = "出荷可否:"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'FRM_305021
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.ClientSize = New System.Drawing.Size(537, 204)
+        Me.Controls.Add(Me.cboXSYUKKA_KAHI)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.cmdCancel)
+        Me.Controls.Add(Me.cmdZikkou)
+        Me.Name = "FRM_305021"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "出荷可否更新確認"
+        Me.ResumeLayout(False)
+
+    End Sub
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents cmdCancel As System.Windows.Forms.Button
+    Friend WithEvents cmdZikkou As System.Windows.Forms.Button
+    Friend WithEvents cboXSYUKKA_KAHI As MateCommon.cmpMComboBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+
+End Class

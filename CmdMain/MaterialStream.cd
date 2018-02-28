@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="MS UI Gothic" Size="9" />
+  <Class Name="CmdMain.AutoCmdExec">
+    <Position X="9.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AutoCmdExec.vb</FileName>
+      <HashCode>AAACQACAQCAAAAAAAAAwAAQAkBAAQAAAAAggACCACAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="CmdMain.AutoCmdExec.AutoCmdExecStart" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AutoCmdExec.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="CmdMain.AutoCmdExec.AutoCmdExecEnd" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AutoCmdExec.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+  </Class>
+  <Class Name="CmdMain.ClientAnswer">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ClientAnswer.vb</FileName>
+      <HashCode>AAACSAiAQCAIAAIAAEAwAAAAEBAAAAAAAAAgACCAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="CmdMain.ClientAnswer.ClientAnswerStart" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ClientAnswer.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="CmdMain.ClientAnswer.ClientAnswerEnd" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ClientAnswer.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+  </Class>
+  <Class Name="CmdMain.LogWrite">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>LogWrite.vb</FileName>
+      <HashCode>AAAAQACAAAAAAAAAAAAQAAAgABAAAAgAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="CmdMain.ManagerMain">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ManagerMain.vb</FileName>
+      <HashCode>ABQAwADEQCAAAAAAAAAQASEAABAAAAAAAgAgEADAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="CmdMain.OnTimeExec">
+    <Position X="7.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>OnTimeExec.vb</FileName>
+      <HashCode>AAAAQAiAwiAIAAAAAAEQACAAMBIAQAAAIAAgIICAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="CmdMain.OnTimeExec.OnTimeExecStart" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>OnTimeExec.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="CmdMain.OnTimeExec.OnTimeExecEnd" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>OnTimeExec.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+  </Class>
+  <Class Name="CmdMain.SendRecv">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SendRecv.vb</FileName>
+      <HashCode>AAAARAiAwiAIgAAAAAEQACAAEBIAAAAAIAAwIACAAQQ=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="CmdMain.SendRecv.SendRecvStart" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SendRecv.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="CmdMain.SendRecv.SendRecvEnd" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SendRecv.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+  </Class>
+  <Class Name="CmdMain.StateObject">
+    <Position X="2.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>StateObject.vb</FileName>
+      <HashCode>AAAAAAAABAAAAAACCAEAAACBAAACAAAAAABAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="CmdMain.TimerExec">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TimerExec.vb</FileName>
+      <HashCode>AAAAQAiAwiAIAAAAAAEQACAAEBIAQAEAIAAmIICAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="CmdMain.TimerExec.TimerExecStart" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TimerExec.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="CmdMain.TimerExec.TimerExecEnd" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TimerExec.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+  </Class>
+  <Class Name="UserProcess.clsTemplate">
+    <Position X="7.5" Y="7" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="UserProcess.cmd_exec">
+    <Position X="9.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="UserProcess.cmd_junction">
+    <Position X="5.75" Y="9" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="UserProcess.cmd_manage">
+    <Position X="4" Y="8.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="SystemConst.clsConnPool">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SystemConst.clsConnPool.RetryErrCode" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="SystemConst.clsTelegram">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="SystemConst.Common">
+    <Position X="11" Y="8.75" Width="1.5" />
+    <TypeIdentifier />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SystemConst.Common.RetCode" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Enum Name="SystemConst.Common.LogType" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Enum Name="SystemConst.Common.Debug" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Enum Name="SystemConst.Common.KEY" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Enum Name="SystemConst.Common.Popup_Ret" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Enum Name="SystemConst.Common.AddToLog_frm_ErrorType" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Enum Name="SystemConst.Common.Form" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Enum Name="SystemConst.Common.CR2304_Group" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+    </NestedTypes>
+  </Class>
+</ClassDiagram>

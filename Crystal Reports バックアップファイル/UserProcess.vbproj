@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B109D983-00C2-4F48-964E-EFF35A4033AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UserProcess</RootNamespace>
+    <AssemblyName>UserProcess</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\BIN\UserProcess\</OutputPath>
+    <DocumentationFile>UserProcess.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\BIN\UserProcess\</OutputPath>
+    <DocumentationFile>UserProcess.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <HintPath>c:\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource">
+      <HintPath>c:\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared">
+      <HintPath>c:\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms">
+      <HintPath>c:\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsTemplate.vb" />
+    <Compile Include="clsTemplateServer.vb" />
+    <Compile Include="clsTemplateTable.vb" />
+    <Compile Include="cmd_exec.vb" />
+    <Compile Include="cmd_junction.vb" />
+    <Compile Include="cmd_manage.vb" />
+    <Compile Include="ContinueForException.vb" />
+    <Compile Include="CrystalReports\clsComFuncFRM.vb" />
+    <Compile Include="CrystalReports\clsPrintDataSet.Designer.vb">
+      <DependentUpon>clsPrintDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CrystalReports\clsPrintDataSet.vb">
+      <DependentUpon>clsPrintDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReports\PRT_311050_01.vb">
+      <DependentUpon>PRT_311050_01.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="EXCEL\clsComFuncExcel.vb" />
+    <Compile Include="EXCEL\clsExcelAppCtl.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RollBackException.vb" />
+    <Compile Include="SVR_000000\SVR_010001.vb" />
+    <Compile Include="SVR_000000\SVR_010002.vb" />
+    <Compile Include="SVR_000000\SVR_010301.vb" />
+    <Compile Include="SVR_000000\SVR_010302.vb" />
+    <Compile Include="SVR_000000\SVR_010401.vb" />
+    <Compile Include="SVR_000000\SVR_020102.vb" />
+    <Compile Include="SVR_000000\SVR_030101.vb" />
+    <Compile Include="SVR_000000\SVR_040101.vb" />
+    <Compile Include="SVR_000000\SVR_040102.vb" />
+    <Compile Include="SVR_100000\SVR_100206.vb" />
+    <Compile Include="SVR_100000\SVR_100207.vb" />
+    <Compile Include="SVR_100000\SVR_100401.vb" />
+    <Compile Include="SVR_100000\SVR_100501.vb" />
+    <Compile Include="SVR_100000\SVR_100502.vb" />
+    <Compile Include="SVR_100000\SVR_100601.vb" />
+    <Compile Include="SVR_100000\SVR_100602.vb" />
+    <Compile Include="SVR_100000\SVR_190001.vb" />
+    <Compile Include="SVR_200000\SVR_200002.vb" />
+    <Compile Include="SVR_200000\SVR_200003.vb" />
+    <Compile Include="SVR_200000\SVR_200004.vb" />
+    <Compile Include="SVR_200000\SVR_200005.vb" />
+    <Compile Include="SVR_200000\SVR_200006.vb" />
+    <Compile Include="SVR_200000\SVR_200007.vb" />
+    <Compile Include="SVR_200000\SVR_200202.vb" />
+    <Compile Include="SVR_200000\SVR_200301.vb" />
+    <Compile Include="SVR_200000\SVR_200302.vb" />
+    <Compile Include="SVR_200000\SVR_200701.vb" />
+    <Compile Include="SVR_200000\SVR_200702.vb" />
+    <Compile Include="SVR_200000\SVR_200801.vb" />
+    <Compile Include="SVR_200000\SVR_200901.vb" />
+    <Compile Include="SVR_200000\SVR_201001.vb" />
+    <Compile Include="SVR_200000\SVR_201401.vb" />
+    <Compile Include="SVR_200000\SVR_201601.vb" />
+    <Compile Include="SVR_200000\SVR_201801.vb" />
+    <Compile Include="SVR_200000\SVR_201901.vb" />
+    <Compile Include="SVR_200000\SVR_202001.vb" />
+    <Compile Include="SVR_300000\SVR_310101.vb" />
+    <Compile Include="SVR_300000\SVR_310102.vb" />
+    <Compile Include="SVR_300000\SVR_310103.vb" />
+    <Compile Include="SVR_300000\SVR_310104.vb" />
+    <Compile Include="SVR_300000\SVR_310201.vb" />
+    <Compile Include="SVR_300000\SVR_310202.vb" />
+    <Compile Include="SVR_300000\SVR_310301.vb" />
+    <Compile Include="SVR_300000\SVR_310304.vb" />
+    <Compile Include="SVR_300000\SVR_310305.vb" />
+    <Compile Include="SVR_300000\SVR_340001.vb" />
+    <Compile Include="SVR_300000\SVR_340002.vb" />
+    <Compile Include="SVR_300000\SVR_340003.vb" />
+    <Compile Include="SVR_300000\SVR_340011.vb" />
+    <Compile Include="SVR_300000\SVR_340020.vb" />
+    <Compile Include="SVR_300000\SVR_390001.vb" />
+    <Compile Include="SVR_300000\SVR_390002.vb" />
+    <Compile Include="SVR_300000\SVR_390003.vb" />
+    <Compile Include="SVR_400000\SVR_400001.vb" />
+    <Compile Include="SVR_400000\SVR_400002.vb" />
+    <Compile Include="SVR_400000\SVR_400003.vb" />
+    <Compile Include="SVR_400000\SVR_400101.vb" />
+    <Compile Include="SVR_400000\SVR_400102.vb" />
+    <Compile Include="SVR_400000\SVR_400103.vb" />
+    <Compile Include="SVR_400000\SVR_400104.vb" />
+    <Compile Include="SVR_400000\SVR_400106.vb" />
+    <Compile Include="SVR_400000\SVR_400107.vb" />
+    <Compile Include="SVR_400000\SVR_400108.vb" />
+    <Compile Include="SVR_400000\SVR_400201.vb" />
+    <Compile Include="SVR_400000\SVR_400202.vb" />
+    <Compile Include="SVR_400000\SVR_400203.vb" />
+    <Compile Include="SVR_400000\SVR_400204.vb" />
+    <Compile Include="SVR_400000\SVR_400205.vb" />
+    <Compile Include="SVR_400000\SVR_400401.vb" />
+    <Compile Include="SVR_400000\SVR_400402.vb" />
+    <Compile Include="SVR_400000\SVR_400501.vb" />
+    <Compile Include="SVR_400000\SVR_400502.vb" />
+    <Compile Include="SVR_400000\SVR_400601.vb" />
+    <Compile Include="SVR_400000\SVR_400602.vb" />
+    <Compile Include="SVR_400000\SVR_400603.vb" />
+    <Compile Include="SVR_400000\SVR_400604.vb" />
+    <Compile Include="SVR_400000\SVR_400605.vb" />
+    <Compile Include="SVR_400000\SVR_400607.vb" />
+    <Compile Include="SVR_400000\SVR_400608.vb" />
+    <Compile Include="SVR_400000\SVR_400701.vb" />
+    <Compile Include="SVR_400000\SVR_400702.vb" />
+    <Compile Include="SVR_400000\SVR_400606.vb" />
+    <Compile Include="SVR_400000\SVR_400703.vb" />
+    <Compile Include="SVR_400000\SVR_400704.vb" />
+    <Compile Include="SVR_400000\SVR_400705.vb" />
+    <Compile Include="SVR_400000\SVR_400901.vb" />
+    <Compile Include="SVR_900000\SVR_900001.vb" />
+    <Compile Include="SVR_900000\SVR_900002.vb" />
+    <Compile Include="SVR_900000\SVR_999001.vb" />
+    <Compile Include="SVR_900000\SVR_999002.vb" />
+    <Compile Include="SVR_900000\SVR_999003.vb" />
+    <Compile Include="SVR_900000\SVR_999801.vb" />
+    <Compile Include="SVR_900000\SVR_999802.vb" />
+    <Compile Include="SVR_900000\SVR_999803.vb" />
+    <Compile Include="SVR_900000\SVR_999804.vb" />
+    <Compile Include="SVR_900000\SVR_999805.vb" />
+    <Compile Include="SVR_900000\SVR_999806.vb" />
+    <Compile Include="SVR_900000\SVR_999901.vb" />
+    <Compile Include="SVR_900000\SVR_999902.vb" />
+    <Compile Include="SVR_900000\SVR_999903.vb" />
+    <Compile Include="SVR_900000\SVR_999904.vb" />
+    <Compile Include="SVR_900000\SVR_999905.vb" />
+    <Compile Include="SVR_900000\SVR_999906.vb" />
+    <Compile Include="SVR_900000\SVR_999998.vb" />
+    <Compile Include="SVR_900000\SVR_999999.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XDSP_PLC_MAINTE.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XLOG_MELSEC.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XLOG_MELSEC02.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XLOG_MODBUS.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XLOG_MODBUS02.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XMST_DPL_PL.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XMST_DPL_PL_PTN.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XMST_GYOUSYA.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XMST_PROD_LINE.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XMST_PROD_LINE_1F.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XMST_PROD_LINE_D45.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XMST_SYARYOU.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XMST_SYASYU.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XMST_WRAPPING_MAKER.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XMST_XCOMMENT01_01.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XPLN_OUT.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XPLN_OUT_DTL.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XPRG_PARAM_TBL01.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XRPT_PRODUCT_IN.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XRPT_ZAIKO.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XRST_DPL_PL.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XRST_EQ_ERROR.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XRST_EQ_RUN.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XRST_OUT.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XRST_OUT_DTL.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XRST_PRODUCT_IN.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XRST_SOUGYOU.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XSTS_BCR.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XSTS_BERTH.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XSTS_CONVEYOR.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XSTS_DPL_PL.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XSTS_PRODUCT_IN.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XSTS_TRK.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XSTS_WRAPPING_MATERIAL.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XSTS_WRAPPING_MATERIAL_1F.vb" />
+    <Compile Include="TBL\TBL_JOB\TBL_XSTS_WRAPPING_MATERIAL_D45.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TDSP_CONST.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TDSP_EQ_STS.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TDSP_GCOL.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TDSP_GRID.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TDSP_TERM_MSG.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TEVD_OPE.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TEVD_OPE_DTL.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TEVD_STOCK_LOG.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TEVD_SUITOU.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TEVD_TBLCHANGE.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TEVD_TBLCHANGE_DTL.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TLOG_CHECK_HOST.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TLOG_CHECK_HOST_DTL.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TLOG_EQ.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TLOG_EQ_ERROR.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TLOG_INOUT.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_AREA.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_CHECK_EQ.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_CNV_CRANE.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_EQ_ERROR.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_EQ_STOP.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_ITEM.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_KUBUN.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_LEVEL.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_LOT.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_PLACE.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_RAC_BUNRUI_PR.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_REASON.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_RES_CD_EQ.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_SAGYO.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_SEKININ.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_SP_RAC_BUNRUI.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_SP_RES_TYPE.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_TBLCHANGE.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_UNIT.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_UPDATE_EQ.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TPLN_CARRY_QUE.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TPLN_INVENTORY.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TPLN_INVENTORY_DTL.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TRST_PALLET.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TSTS_CRANE.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TSTS_ST.vb" />
+    <Compile Include="UserException.vb" />
+    <Compile Include="SVR_000000\SVR_000001.vb" />
+    <Compile Include="SVR_000000\SVR_020101.vb" />
+    <Compile Include="SVR_000000\SVR_020151.vb" />
+    <Compile Include="SVR_000000\SVR_010101.vb" />
+    <Compile Include="SVR_000000\SVR_010102.vb" />
+    <Compile Include="SVR_000000\SVR_010201.vb" />
+    <Compile Include="SVR_000000\SVR_010202.vb" />
+    <Compile Include="SVR_000000\SVR_040001.vb" />
+    <Compile Include="SVR_200000\SVR_200101.vb" />
+    <Compile Include="SVR_200000\SVR_200201.vb" />
+    <Compile Include="SVR_200000\SVR_200401.vb" />
+    <Compile Include="SVR_200000\SVR_200503.vb" />
+    <Compile Include="SVR_200000\SVR_200501.vb" />
+    <Compile Include="SVR_200000\SVR_200502.vb" />
+    <Compile Include="SVR_200000\SVR_200601.vb" />
+    <Compile Include="SVR_200000\SVR_200001.vb" />
+    <Compile Include="SVR_100000\SVR_100101.vb" />
+    <Compile Include="SVR_100000\SVR_100102.vb" />
+    <Compile Include="SVR_100000\SVR_100103.vb" />
+    <Compile Include="SVR_100000\SVR_100104.vb" />
+    <Compile Include="SVR_100000\SVR_100201.vb" />
+    <Compile Include="SVR_100000\SVR_100202.vb" />
+    <Compile Include="SVR_100000\SVR_100203.vb" />
+    <Compile Include="SVR_100000\SVR_100204.vb" />
+    <Compile Include="SVR_100000\SVR_100205.vb" />
+    <Compile Include="SVR_100000\SVR_100301.vb" />
+    <Compile Include="SVR_100000\SVR_100303.vb" />
+    <Compile Include="SVR_100000\SVR_100302.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TDSP_CTRL.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TDSP_DISP.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TDSP_NAME.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TDSP_PMT_TERM.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TDSP_PMT_USER.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TDSP_TERM.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TDSP_TREE.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TLIF_TRNS_RECV.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TLIF_TRNS_SEND.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TLOG_MESSAGE.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TLOG_OPE.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TLOG_OPE_DTL.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TLOG_SYS.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TLOG_TRNS.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_CRANE.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_DELETE.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_MESSAGE.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_ROUTE.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_ST.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_TRK.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_USER.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TMST_USER_DSP.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TPRG_PARAM_TBL.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TPRG_SEQNO.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TPRG_SERIAL.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TPRG_SYS_HEN.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TPRG_TIMER.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TPRG_TRK_BUF.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TRST_STOCK.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TSTS_EQ_CTRL.vb" />
+    <Compile Include="TBL\TBL_MATE\TBL_TSTS_HIKIATE.vb" />
+    <Compile Include="UserException_LogNothing.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CrystalReports\PRT_311050_01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PRT_311050_01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CrystalReports\clsPrintDataSet.xsc">
+      <DependentUpon>clsPrintDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CrystalReports\clsPrintDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>clsPrintDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CrystalReports\clsPrintDataSet.xss">
+      <DependentUpon>clsPrintDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JobCommon\JobCommon.vbproj">
+      <Project>{53A0D902-DAEE-407A-9FF5-1A371FC5B8C8}</Project>
+      <Name>JobCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MateCommon\MateCommon.vbproj">
+      <Project>{3ED6F97E-CFD8-41C7-A170-E70002E6AA00}</Project>
+      <Name>MateCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel1">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

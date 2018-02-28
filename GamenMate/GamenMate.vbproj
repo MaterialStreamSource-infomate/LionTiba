@@ -1,0 +1,1935 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D65944E-D685-4A97-A4AE-1D416DEA99BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GamenMate.My.MyApplication</StartupObject>
+    <RootNamespace>GamenMate</RootNamespace>
+    <AssemblyName>GamenMate</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/GamenMate/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\BIN\GamenMate\</OutputPath>
+    <DocumentationFile>GamenMate.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\BIN\GamenMate\</OutputPath>
+    <DocumentationFile>GamenMate.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>GamenMate.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\bin\GamenMate\</OutputPath>
+    <DocumentationFile>GamenMate.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Design|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Design\</OutputPath>
+    <DocumentationFile>GamenMate.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Design|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Design\</OutputPath>
+    <DocumentationFile>GamenMate.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="MateCommon" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cls999999.vb" />
+    <Compile Include="clsComFuncFRM.vb" />
+    <Compile Include="clsOwner_FRM_299004.vb" />
+    <Compile Include="clsPrintDataSet.Designer.vb">
+      <DependentUpon>clsPrintDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="clsPrintDataSet.vb">
+      <DependentUpon>clsPrintDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_206012.Designer.vb">
+      <DependentUpon>FRM_206012.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_206012.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_302010.designer.vb">
+      <DependentUpon>FRM_302010.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_302010.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_302011.designer.vb">
+      <DependentUpon>FRM_302011.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_302011.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_303011.Designer.vb">
+      <DependentUpon>FRM_303011.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_303011.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_303012.Designer.vb">
+      <DependentUpon>FRM_303012.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_303012.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_303013.Designer.vb">
+      <DependentUpon>FRM_303013.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_303013.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_303025.Designer.vb">
+      <DependentUpon>FRM_303025.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_303025.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_303031.Designer.vb">
+      <DependentUpon>FRM_303031.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_303031.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_303032.Designer.vb">
+      <DependentUpon>FRM_303032.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_303032.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_303041.Designer.vb">
+      <DependentUpon>FRM_303041.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_303041.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_304060.Designer.vb">
+      <DependentUpon>FRM_304060.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_304060.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_304070.Designer.vb">
+      <DependentUpon>FRM_304070.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_304070.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_305061.Designer.vb">
+      <DependentUpon>FRM_305061.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_305061.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_305071.Designer.vb">
+      <DependentUpon>FRM_305071.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_305071.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_305080.Designer.vb">
+      <DependentUpon>FRM_305080.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_305080.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_306021.Designer.vb">
+      <DependentUpon>FRM_306021.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_306021.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_306031.Designer.vb">
+      <DependentUpon>FRM_306031.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_306031.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_306041.Designer.vb">
+      <DependentUpon>FRM_306041.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_306041.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_306051.Designer.vb">
+      <DependentUpon>FRM_306051.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_306051.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_306061.Designer.vb">
+      <DependentUpon>FRM_306061.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_306061.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_306070.Designer.vb">
+      <DependentUpon>FRM_306070.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_306070.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_306071.Designer.vb">
+      <DependentUpon>FRM_306071.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_306071.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_306080.designer.vb">
+      <DependentUpon>FRM_306080.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_306080.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_306081.designer.vb">
+      <DependentUpon>FRM_306081.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_306081.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_306090.designer.vb">
+      <DependentUpon>FRM_306090.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_306090.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_306091.designer.vb">
+      <DependentUpon>FRM_306091.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_306091.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307090.Designer.vb">
+      <DependentUpon>FRM_307090.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307090.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307092.Designer.vb">
+      <DependentUpon>FRM_307092.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307092.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307102.Designer.vb">
+      <DependentUpon>FRM_307102.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307102.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307071.Designer.vb">
+      <DependentUpon>FRM_307071.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307071.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_000001.Designer.vb">
+      <DependentUpon>FRM_000001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_000001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_000002.Designer.vb">
+      <DependentUpon>FRM_000002.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_000002.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_100001.designer.vb">
+      <DependentUpon>FRM_100001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_100001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_100005.Designer.vb">
+      <DependentUpon>FRM_100005.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_100005.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_100006.designer.vb">
+      <DependentUpon>FRM_100006.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_100006.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_100007.Designer.vb">
+      <DependentUpon>FRM_100007.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_100007.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_100104.Designer.vb">
+      <DependentUpon>FRM_100104.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_100104.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_100105.Designer.vb">
+      <DependentUpon>FRM_100105.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_100105.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_202000.Designer.vb">
+      <DependentUpon>FRM_202000.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_202000.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_202001.Designer.vb">
+      <DependentUpon>FRM_202001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_202001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_203000.designer.vb">
+      <DependentUpon>FRM_203000.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_203000.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_204000.designer.vb">
+      <DependentUpon>FRM_204000.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_204000.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_204010.Designer.vb">
+      <DependentUpon>FRM_204010.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_204010.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_204020.Designer.vb">
+      <DependentUpon>FRM_204020.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_204020.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_204030.Designer.vb">
+      <DependentUpon>FRM_204030.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_204030.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_204050.Designer.vb">
+      <DependentUpon>FRM_204050.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_204050.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_204051.Designer.vb">
+      <DependentUpon>FRM_204051.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_204051.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_204070.Designer.vb">
+      <DependentUpon>FRM_204070.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_204070.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_205000.designer.vb">
+      <DependentUpon>FRM_205000.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_205000.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_100201.Designer.vb">
+      <DependentUpon>FRM_100201.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_100201.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_205010.Designer.vb">
+      <DependentUpon>FRM_205010.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_205010.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_205020.Designer.vb">
+      <DependentUpon>FRM_205020.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_205020.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_205030.Designer.vb">
+      <DependentUpon>FRM_205030.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_205030.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_205040.Designer.vb">
+      <DependentUpon>FRM_205040.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_205040.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_205041.Designer.vb">
+      <DependentUpon>FRM_205041.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_205041.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_205042.Designer.vb">
+      <DependentUpon>FRM_205042.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_205042.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_206000.designer.vb">
+      <DependentUpon>FRM_206000.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_206000.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_206010.Designer.vb">
+      <DependentUpon>FRM_206010.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_206010.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_206011.Designer.vb">
+      <DependentUpon>FRM_206011.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_206011.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_206020.Designer.vb">
+      <DependentUpon>FRM_206020.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_206020.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_206021.Designer.vb">
+      <DependentUpon>FRM_206021.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_206021.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_206030.Designer.vb">
+      <DependentUpon>FRM_206030.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_206030.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_206040.Designer.vb">
+      <DependentUpon>FRM_206040.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_206040.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_206041.Designer.vb">
+      <DependentUpon>FRM_206041.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_206041.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_207000.designer.vb">
+      <DependentUpon>FRM_207000.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_207000.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_207010.Designer.vb">
+      <DependentUpon>FRM_207010.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_207010.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_207011.Designer.vb">
+      <DependentUpon>FRM_207011.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_207011.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_207020.Designer.vb">
+      <DependentUpon>FRM_207020.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_207020.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_207030.Designer.vb">
+      <DependentUpon>FRM_207030.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_207030.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_207040.Designer.vb">
+      <DependentUpon>FRM_207040.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_207040.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_207041.Designer.vb">
+      <DependentUpon>FRM_207041.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_207041.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_207050.Designer.vb">
+      <DependentUpon>FRM_207050.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_207050.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_207060.Designer.vb">
+      <DependentUpon>FRM_207060.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_207060.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_207061.Designer.vb">
+      <DependentUpon>FRM_207061.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_207061.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_209000.Designer.vb">
+      <DependentUpon>FRM_209000.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_209000.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_100002.Designer.vb">
+      <DependentUpon>FRM_100002.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_100002.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_100101.Designer.vb">
+      <DependentUpon>FRM_100101.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_100101.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_100102.Designer.vb">
+      <DependentUpon>FRM_100102.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_100102.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_100103.Designer.vb">
+      <DependentUpon>FRM_100103.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_100103.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_100004.Designer.vb">
+      <DependentUpon>FRM_100004.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_100004.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_100003.designer.vb">
+      <DependentUpon>FRM_100003.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_100003.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_201000.Designer.vb">
+      <DependentUpon>FRM_201000.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_201000.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_299001.Designer.vb">
+      <DependentUpon>FRM_299001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_299001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_299002.Designer.vb">
+      <DependentUpon>FRM_299002.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_299002.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_299003.Designer.vb">
+      <DependentUpon>FRM_299003.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_299003.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_299004.Designer.vb">
+      <DependentUpon>FRM_299004.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_299004.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_299005.Designer.vb">
+      <DependentUpon>FRM_299005.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_299005.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_299006.Designer.vb">
+      <DependentUpon>FRM_299006.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_299006.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_299010.Designer.vb">
+      <DependentUpon>FRM_299010.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_299010.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_299011.Designer.vb">
+      <DependentUpon>FRM_299011.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_299011.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_299000.Designer.vb">
+      <DependentUpon>FRM_299000.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_299000.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_302001.Designer.vb">
+      <DependentUpon>FRM_302001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_302001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_303010.Designer.vb">
+      <DependentUpon>FRM_303010.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_303010.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_303020.Designer.vb">
+      <DependentUpon>FRM_303020.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_303020.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_303030.Designer.vb">
+      <DependentUpon>FRM_303030.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_303030.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_303040.Designer.vb">
+      <DependentUpon>FRM_303040.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_303040.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_304040.Designer.vb">
+      <DependentUpon>FRM_304040.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_304040.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_304050.Designer.vb">
+      <DependentUpon>FRM_304050.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_304050.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_305050.Designer.vb">
+      <DependentUpon>FRM_305050.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_305050.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_305060.Designer.vb">
+      <DependentUpon>FRM_305060.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_305060.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_305070.Designer.vb">
+      <DependentUpon>FRM_305070.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_305070.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_306020.Designer.vb">
+      <DependentUpon>FRM_306020.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_306020.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_306030.Designer.vb">
+      <DependentUpon>FRM_306030.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_306030.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_306040.Designer.vb">
+      <DependentUpon>FRM_306040.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_306040.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_306050.Designer.vb">
+      <DependentUpon>FRM_306050.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_306050.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_306060.Designer.vb">
+      <DependentUpon>FRM_306060.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_306060.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307070.Designer.vb">
+      <DependentUpon>FRM_307070.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307070.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307072.Designer.vb">
+      <DependentUpon>FRM_307072.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307072.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307073.Designer.vb">
+      <DependentUpon>FRM_307073.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307073.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307080.Designer.vb">
+      <DependentUpon>FRM_307080.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307080.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307081.Designer.vb">
+      <DependentUpon>FRM_307081.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307081.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307091.Designer.vb">
+      <DependentUpon>FRM_307091.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307091.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307100.Designer.vb">
+      <DependentUpon>FRM_307100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307101.Designer.vb">
+      <DependentUpon>FRM_307101.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307101.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307110.Designer.vb">
+      <DependentUpon>FRM_307110.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307110.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307120.Designer.vb">
+      <DependentUpon>FRM_307120.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307120.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307121.Designer.vb">
+      <DependentUpon>FRM_307121.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307121.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307122.Designer.vb">
+      <DependentUpon>FRM_307122.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307122.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307123.Designer.vb">
+      <DependentUpon>FRM_307123.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307123.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307130.Designer.vb">
+      <DependentUpon>FRM_307130.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307130.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307140.Designer.vb">
+      <DependentUpon>FRM_307140.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307140.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307150.Designer.vb">
+      <DependentUpon>FRM_307150.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307150.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307151.Designer.vb">
+      <DependentUpon>FRM_307151.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307151.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_308010.Designer.vb">
+      <DependentUpon>FRM_308010.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_308010.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_308011.Designer.vb">
+      <DependentUpon>FRM_308011.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_308011.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_310010.Designer.vb">
+      <DependentUpon>FRM_310010.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_310010.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_310011.Designer.vb">
+      <DependentUpon>FRM_310011.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_310011.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_310020.Designer.vb">
+      <DependentUpon>FRM_310020.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_310020.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_310030.Designer.vb">
+      <DependentUpon>FRM_310030.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_310030.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_310031.Designer.vb">
+      <DependentUpon>FRM_310031.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_310031.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_310040.Designer.vb">
+      <DependentUpon>FRM_310040.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_310040.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_310041.Designer.vb">
+      <DependentUpon>FRM_310041.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_310041.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_310050.Designer.vb">
+      <DependentUpon>FRM_310050.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_310050.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_310051.Designer.vb">
+      <DependentUpon>FRM_310051.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_310051.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_311010.Designer.vb">
+      <DependentUpon>FRM_311010.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_311010.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_311011.Designer.vb">
+      <DependentUpon>FRM_311011.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_311011.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_311015.Designer.vb">
+      <DependentUpon>FRM_311015.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_311015.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_311020.Designer.vb">
+      <DependentUpon>FRM_311020.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_311020.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_311030.Designer.vb">
+      <DependentUpon>FRM_311030.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_311030.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_311031.Designer.vb">
+      <DependentUpon>FRM_311031.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_311031.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_311040.Designer.vb">
+      <DependentUpon>FRM_311040.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_311040.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_311050.Designer.vb">
+      <DependentUpon>FRM_311050.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_311050.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_311055.Designer.vb">
+      <DependentUpon>FRM_311055.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_311055.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_311060.Designer.vb">
+      <DependentUpon>FRM_311060.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_311060.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_311070.Designer.vb">
+      <DependentUpon>FRM_311070.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_311070.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_311080.Designer.vb">
+      <DependentUpon>FRM_311080.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_311080.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_311090.Designer.vb">
+      <DependentUpon>FRM_311090.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_311090.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_311100.Designer.vb">
+      <DependentUpon>FRM_311100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_311100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PRT_306020_01.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRT_306020_01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PRT_000001.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRT_000001.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PRT_204010_01.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRT_204010_01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PRT_204020_01.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRT_204020_01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PRT_204030_01.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRT_204030_01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PRT_205040_01.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRT_205040_01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PRT_206010_01.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRT_206010_01.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="PRT_307110_01.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRT_307110_01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PRT_307110_02.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRT_307110_02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shutdown.vb" />
+    <Compile Include="PRT_204010_02.vb">
+      <DependentUpon>PRT_204010_02.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PRT_307110_01_bk20130517.vb">
+      <DependentUpon>PRT_307110_01_bk20130517.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PRT_304060_01.vb">
+      <DependentUpon>PRT_304060_01.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="FRM_299007.Designer.vb">
+      <DependentUpon>FRM_299007.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_299007.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRT_311015_01.vb">
+      <DependentUpon>PRT_311015_01.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="FRM_304080.Designer.vb">
+      <DependentUpon>FRM_304080.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_304080.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRT_304080_01.vb">
+      <DependentUpon>PRT_304080_01.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="FRM_302012.designer.vb">
+      <DependentUpon>FRM_302012.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_302012.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_307131.Designer.vb">
+      <DependentUpon>FRM_307131.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_307131.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FRM_206012.resx">
+      <DependentUpon>FRM_206012.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_302001.resx">
+      <DependentUpon>FRM_302001.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_302010.resx">
+      <DependentUpon>FRM_302010.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_302011.resx">
+      <DependentUpon>FRM_302011.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_303011.resx">
+      <DependentUpon>FRM_303011.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_303012.resx">
+      <DependentUpon>FRM_303012.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_303013.resx">
+      <DependentUpon>FRM_303013.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_303025.resx">
+      <DependentUpon>FRM_303025.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_303031.resx">
+      <DependentUpon>FRM_303031.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_303032.resx">
+      <DependentUpon>FRM_303032.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_303041.resx">
+      <DependentUpon>FRM_303041.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_304060.resx">
+      <DependentUpon>FRM_304060.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_304070.resx">
+      <DependentUpon>FRM_304070.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_305061.resx">
+      <DependentUpon>FRM_305061.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_305071.resx">
+      <DependentUpon>FRM_305071.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_305080.resx">
+      <DependentUpon>FRM_305080.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_306021.resx">
+      <DependentUpon>FRM_306021.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_306031.resx">
+      <DependentUpon>FRM_306031.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_306041.resx">
+      <DependentUpon>FRM_306041.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_306051.resx">
+      <DependentUpon>FRM_306051.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_306061.resx">
+      <DependentUpon>FRM_306061.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_306070.resx">
+      <DependentUpon>FRM_306070.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_306071.resx">
+      <DependentUpon>FRM_306071.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_306080.resx">
+      <DependentUpon>FRM_306080.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_306081.resx">
+      <DependentUpon>FRM_306081.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_306090.resx">
+      <DependentUpon>FRM_306090.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_306091.resx">
+      <DependentUpon>FRM_306091.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307090.resx">
+      <DependentUpon>FRM_307090.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307092.resx">
+      <DependentUpon>FRM_307092.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307102.resx">
+      <DependentUpon>FRM_307102.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307071.resx">
+      <DependentUpon>FRM_307071.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_000001.resx">
+      <DependentUpon>FRM_000001.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_000002.resx">
+      <DependentUpon>FRM_000002.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_100001.resx">
+      <DependentUpon>FRM_100001.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_100005.resx">
+      <DependentUpon>FRM_100005.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_100006.resx">
+      <DependentUpon>FRM_100006.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_100007.resx">
+      <DependentUpon>FRM_100007.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_100104.resx">
+      <DependentUpon>FRM_100104.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_100105.resx">
+      <DependentUpon>FRM_100105.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_202000.resx">
+      <DependentUpon>FRM_202000.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_202001.resx">
+      <DependentUpon>FRM_202001.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_203000.resx">
+      <DependentUpon>FRM_203000.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_204000.resx">
+      <DependentUpon>FRM_204000.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_204010.resx">
+      <DependentUpon>FRM_204010.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_204020.resx">
+      <DependentUpon>FRM_204020.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_204030.resx">
+      <DependentUpon>FRM_204030.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_204050.resx">
+      <DependentUpon>FRM_204050.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_204051.resx">
+      <DependentUpon>FRM_204051.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_204070.resx">
+      <DependentUpon>FRM_204070.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_205000.resx">
+      <DependentUpon>FRM_205000.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_100201.resx">
+      <DependentUpon>FRM_100201.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_205010.resx">
+      <DependentUpon>FRM_205010.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_205020.resx">
+      <DependentUpon>FRM_205020.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_205030.resx">
+      <DependentUpon>FRM_205030.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_205040.resx">
+      <DependentUpon>FRM_205040.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_205041.resx">
+      <DependentUpon>FRM_205041.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_205042.resx">
+      <DependentUpon>FRM_205042.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_206000.resx">
+      <DependentUpon>FRM_206000.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_206010.resx">
+      <DependentUpon>FRM_206010.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_206011.resx">
+      <DependentUpon>FRM_206011.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_206020.resx">
+      <DependentUpon>FRM_206020.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_206021.resx">
+      <DependentUpon>FRM_206021.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_206030.resx">
+      <DependentUpon>FRM_206030.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_206040.resx">
+      <DependentUpon>FRM_206040.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_206041.resx">
+      <DependentUpon>FRM_206041.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_207000.resx">
+      <DependentUpon>FRM_207000.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_207010.resx">
+      <DependentUpon>FRM_207010.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_207011.resx">
+      <DependentUpon>FRM_207011.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_207020.resx">
+      <DependentUpon>FRM_207020.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_207030.resx">
+      <DependentUpon>FRM_207030.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_207040.resx">
+      <DependentUpon>FRM_207040.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_207041.resx">
+      <DependentUpon>FRM_207041.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_207050.resx">
+      <DependentUpon>FRM_207050.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_207060.resx">
+      <DependentUpon>FRM_207060.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_207061.resx">
+      <DependentUpon>FRM_207061.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_209000.resx">
+      <DependentUpon>FRM_209000.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_100002.resx">
+      <DependentUpon>FRM_100002.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_100101.resx">
+      <DependentUpon>FRM_100101.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_100102.resx">
+      <DependentUpon>FRM_100102.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_100103.resx">
+      <DependentUpon>FRM_100103.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_100004.resx">
+      <DependentUpon>FRM_100004.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_100003.resx">
+      <DependentUpon>FRM_100003.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_201000.resx">
+      <DependentUpon>FRM_201000.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_299001.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FRM_299001.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_299002.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FRM_299002.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_299003.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FRM_299003.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_299004.resx">
+      <DependentUpon>FRM_299004.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_299005.resx">
+      <DependentUpon>FRM_299005.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_299006.resx">
+      <DependentUpon>FRM_299006.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_299010.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FRM_299010.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_299011.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FRM_299011.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_299000.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FRM_299000.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_303010.resx">
+      <DependentUpon>FRM_303010.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_303020.resx">
+      <DependentUpon>FRM_303020.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_303030.resx">
+      <DependentUpon>FRM_303030.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_303040.resx">
+      <DependentUpon>FRM_303040.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_304040.resx">
+      <DependentUpon>FRM_304040.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_304050.resx">
+      <DependentUpon>FRM_304050.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_305050.resx">
+      <DependentUpon>FRM_305050.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_305060.resx">
+      <DependentUpon>FRM_305060.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_305070.resx">
+      <DependentUpon>FRM_305070.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_306020.resx">
+      <DependentUpon>FRM_306020.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_306030.resx">
+      <DependentUpon>FRM_306030.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_306040.resx">
+      <DependentUpon>FRM_306040.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_306050.resx">
+      <DependentUpon>FRM_306050.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_306060.resx">
+      <DependentUpon>FRM_306060.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307070.resx">
+      <DependentUpon>FRM_307070.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307072.resx">
+      <DependentUpon>FRM_307072.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307073.resx">
+      <DependentUpon>FRM_307073.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307080.resx">
+      <DependentUpon>FRM_307080.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307081.resx">
+      <DependentUpon>FRM_307081.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307091.resx">
+      <DependentUpon>FRM_307091.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307100.resx">
+      <DependentUpon>FRM_307100.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307101.resx">
+      <DependentUpon>FRM_307101.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307110.resx">
+      <DependentUpon>FRM_307110.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307120.resx">
+      <DependentUpon>FRM_307120.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307121.resx">
+      <DependentUpon>FRM_307121.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307122.resx">
+      <DependentUpon>FRM_307122.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307123.resx">
+      <DependentUpon>FRM_307123.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307130.resx">
+      <DependentUpon>FRM_307130.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307140.resx">
+      <DependentUpon>FRM_307140.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307150.resx">
+      <DependentUpon>FRM_307150.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307151.resx">
+      <DependentUpon>FRM_307151.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_308010.resx">
+      <DependentUpon>FRM_308010.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_308011.resx">
+      <DependentUpon>FRM_308011.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_310010.resx">
+      <DependentUpon>FRM_310010.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_310011.resx">
+      <DependentUpon>FRM_310011.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_310020.resx">
+      <DependentUpon>FRM_310020.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_310030.resx">
+      <DependentUpon>FRM_310030.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_310031.resx">
+      <DependentUpon>FRM_310031.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_310040.resx">
+      <DependentUpon>FRM_310040.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_310041.resx">
+      <DependentUpon>FRM_310041.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_310050.resx">
+      <DependentUpon>FRM_310050.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_310051.resx">
+      <DependentUpon>FRM_310051.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_311010.resx">
+      <DependentUpon>FRM_311010.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_311011.resx">
+      <DependentUpon>FRM_311011.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_311015.resx">
+      <DependentUpon>FRM_311015.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_311020.resx">
+      <DependentUpon>FRM_311020.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_311030.resx">
+      <DependentUpon>FRM_311030.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_311031.resx">
+      <DependentUpon>FRM_311031.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_311040.resx">
+      <DependentUpon>FRM_311040.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_311050.resx">
+      <DependentUpon>FRM_311050.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_311055.resx">
+      <DependentUpon>FRM_311055.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_311060.resx">
+      <DependentUpon>FRM_311060.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_311070.resx">
+      <DependentUpon>FRM_311070.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_311080.resx">
+      <DependentUpon>FRM_311080.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_311090.resx">
+      <DependentUpon>FRM_311090.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_311100.resx">
+      <DependentUpon>FRM_311100.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRT_306020_01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PRT_306020_01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRT_000001.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PRT_000001.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRT_204010_01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PRT_204010_01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRT_204020_01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PRT_204020_01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRT_204030_01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PRT_204030_01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRT_205040_01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PRT_205040_01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRT_204010_02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PRT_204010_02.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRT_206010_01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PRT_206010_01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRT_307110_01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PRT_307110_01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRT_307110_02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PRT_307110_02.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRT_307110_01_bk20130517.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PRT_307110_01_bk20130517.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRT_304060_01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PRT_304060_01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_299007.resx">
+      <DependentUpon>FRM_299007.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRT_311015_01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PRT_311015_01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_304080.resx">
+      <DependentUpon>FRM_304080.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRT_304080_01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PRT_304080_01.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_302012.resx">
+      <DependentUpon>FRM_302012.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_307131.resx">
+      <DependentUpon>FRM_307131.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="clsPrintDataSet.xsc">
+      <DependentUpon>clsPrintDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="clsPrintDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>clsPrintDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="clsPrintDataSet.xss">
+      <DependentUpon>clsPrintDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GamenCommon\GamenCommon.vbproj">
+      <Project>{DE4D187F-1C0C-4BBB-9ECF-EA59D5EB4492}</Project>
+      <Name>GamenCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JobCommon\JobCommon.vbproj">
+      <Project>{53A0D902-DAEE-407A-9FF5-1A371FC5B8C8}</Project>
+      <Name>JobCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MateCommon\MateCommon.vbproj">
+      <Project>{3ED6F97E-CFD8-41C7-A170-E70002E6AA00}</Project>
+      <Name>MateCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserProcess\UserProcess.vbproj">
+      <Project>{B109D983-00C2-4F48-964E-EFF35A4033AE}</Project>
+      <Name>UserProcess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackColor1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackColor2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\BackColor3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

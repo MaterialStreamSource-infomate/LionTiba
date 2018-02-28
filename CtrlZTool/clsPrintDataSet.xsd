@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="clsPrintDataSet" targetNamespace="http://tempuri.org/clsPrintDataSet.xsd" xmlns:mstns="http://tempuri.org/clsPrintDataSet.xsd" xmlns="http://tempuri.org/clsPrintDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="clsPrintDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="clsPrintDataSet" msprop:Generator_DataSetName="clsPrintDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable01" msprop:Generator_UserTableName="DataTable01" msprop:Generator_RowDeletedName="DataTable01RowDeleted" msprop:Generator_RowChangedName="DataTable01RowChanged" msprop:Generator_RowClassName="DataTable01Row" msprop:Generator_RowChangingName="DataTable01RowChanging" msprop:Generator_RowEvArgName="DataTable01RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable01RowChangeEventHandler" msprop:Generator_TableClassName="DataTable01DataTable" msprop:Generator_TableVarName="tableDataTable01" msprop:Generator_RowDeletingName="DataTable01RowDeleting" msprop:Generator_TablePropName="DataTable01">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Data00" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data00" msprop:Generator_ColumnVarNameInTable="columnData00" msprop:Generator_ColumnPropNameInRow="Data00" msprop:Generator_ColumnPropNameInTable="Data00Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data01" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data01" msprop:Generator_ColumnVarNameInTable="columnData01" msprop:Generator_ColumnPropNameInRow="Data01" msprop:Generator_ColumnPropNameInTable="Data01Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data02" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data02" msprop:Generator_ColumnVarNameInTable="columnData02" msprop:Generator_ColumnPropNameInRow="Data02" msprop:Generator_ColumnPropNameInTable="Data02Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data03" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data03" msprop:Generator_ColumnVarNameInTable="columnData03" msprop:Generator_ColumnPropNameInRow="Data03" msprop:Generator_ColumnPropNameInTable="Data03Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data04" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data04" msprop:Generator_ColumnVarNameInTable="columnData04" msprop:Generator_ColumnPropNameInRow="Data04" msprop:Generator_ColumnPropNameInTable="Data04Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data05" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data05" msprop:Generator_ColumnVarNameInTable="columnData05" msprop:Generator_ColumnPropNameInRow="Data05" msprop:Generator_ColumnPropNameInTable="Data05Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data06" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data06" msprop:Generator_ColumnVarNameInTable="columnData06" msprop:Generator_ColumnPropNameInRow="Data06" msprop:Generator_ColumnPropNameInTable="Data06Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data07" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data07" msprop:Generator_ColumnVarNameInTable="columnData07" msprop:Generator_ColumnPropNameInRow="Data07" msprop:Generator_ColumnPropNameInTable="Data07Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data08" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data08" msprop:Generator_ColumnVarNameInTable="columnData08" msprop:Generator_ColumnPropNameInRow="Data08" msprop:Generator_ColumnPropNameInTable="Data08Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data09" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data09" msprop:Generator_ColumnVarNameInTable="columnData09" msprop:Generator_ColumnPropNameInRow="Data09" msprop:Generator_ColumnPropNameInTable="Data09Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data10" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data10" msprop:Generator_ColumnVarNameInTable="columnData10" msprop:Generator_ColumnPropNameInRow="Data10" msprop:Generator_ColumnPropNameInTable="Data10Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data11" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data11" msprop:Generator_ColumnVarNameInTable="columnData11" msprop:Generator_ColumnPropNameInRow="Data11" msprop:Generator_ColumnPropNameInTable="Data11Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data12" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data12" msprop:Generator_ColumnVarNameInTable="columnData12" msprop:Generator_ColumnPropNameInRow="Data12" msprop:Generator_ColumnPropNameInTable="Data12Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data13" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data13" msprop:Generator_ColumnVarNameInTable="columnData13" msprop:Generator_ColumnPropNameInRow="Data13" msprop:Generator_ColumnPropNameInTable="Data13Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data14" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data14" msprop:Generator_ColumnVarNameInTable="columnData14" msprop:Generator_ColumnPropNameInRow="Data14" msprop:Generator_ColumnPropNameInTable="Data14Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data15" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data15" msprop:Generator_ColumnVarNameInTable="columnData15" msprop:Generator_ColumnPropNameInRow="Data15" msprop:Generator_ColumnPropNameInTable="Data15Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data16" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data16" msprop:Generator_ColumnVarNameInTable="columnData16" msprop:Generator_ColumnPropNameInRow="Data16" msprop:Generator_ColumnPropNameInTable="Data16Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data17" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data17" msprop:Generator_ColumnVarNameInTable="columnData17" msprop:Generator_ColumnPropNameInRow="Data17" msprop:Generator_ColumnPropNameInTable="Data17Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data18" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data18" msprop:Generator_ColumnVarNameInTable="columnData18" msprop:Generator_ColumnPropNameInRow="Data18" msprop:Generator_ColumnPropNameInTable="Data18Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data19" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data19" msprop:Generator_ColumnVarNameInTable="columnData19" msprop:Generator_ColumnPropNameInRow="Data19" msprop:Generator_ColumnPropNameInTable="Data19Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data20" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data20" msprop:Generator_ColumnVarNameInTable="columnData20" msprop:Generator_ColumnPropNameInRow="Data20" msprop:Generator_ColumnPropNameInTable="Data20Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data21" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data21" msprop:Generator_ColumnVarNameInTable="columnData21" msprop:Generator_ColumnPropNameInRow="Data21" msprop:Generator_ColumnPropNameInTable="Data21Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data22" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data22" msprop:Generator_ColumnVarNameInTable="columnData22" msprop:Generator_ColumnPropNameInRow="Data22" msprop:Generator_ColumnPropNameInTable="Data22Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data23" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data23" msprop:Generator_ColumnVarNameInTable="columnData23" msprop:Generator_ColumnPropNameInRow="Data23" msprop:Generator_ColumnPropNameInTable="Data23Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data24" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data24" msprop:Generator_ColumnVarNameInTable="columnData24" msprop:Generator_ColumnPropNameInRow="Data24" msprop:Generator_ColumnPropNameInTable="Data24Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data25" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data25" msprop:Generator_ColumnVarNameInTable="columnData25" msprop:Generator_ColumnPropNameInRow="Data25" msprop:Generator_ColumnPropNameInTable="Data25Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data26" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data26" msprop:Generator_ColumnVarNameInTable="columnData26" msprop:Generator_ColumnPropNameInRow="Data26" msprop:Generator_ColumnPropNameInTable="Data26Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data27" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data27" msprop:Generator_ColumnVarNameInTable="columnData27" msprop:Generator_ColumnPropNameInRow="Data27" msprop:Generator_ColumnPropNameInTable="Data27Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data28" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data28" msprop:Generator_ColumnVarNameInTable="columnData28" msprop:Generator_ColumnPropNameInRow="Data28" msprop:Generator_ColumnPropNameInTable="Data28Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Data29" msdata:Caption="Data0" msprop:Generator_UserColumnName="Data29" msprop:Generator_ColumnVarNameInTable="columnData29" msprop:Generator_ColumnPropNameInRow="Data29" msprop:Generator_ColumnPropNameInTable="Data29Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
